@@ -4,7 +4,7 @@
 
     <section id="main-content">
       <h3>Recent Posts</h3>
-      {{ range first 10 .Data.Pages }}
+      {{ range first 5 .Data.Pages }}
 	{{ if eq .Type "post"}}
 	  <div class="post-summary">
 	    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
@@ -13,6 +13,7 @@
 	  </div>
 	{{ end }}
       {{ end }}
+      <a href="post/">View All Posts</a>
     </section>
       
 
