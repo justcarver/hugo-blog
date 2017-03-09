@@ -14,4 +14,4 @@ So, below I will make notes about the process I used to create this website.
 6. I created a blank theme through Hugo, and tried to build it from scratch.  I am having a bit of trouble figuring out a bit of how Hugo by default handles data in the templates.
 7. I am downloading the [Bootstrap v4 Blog](https://github.com/alanorth/hugo-theme-bootstrap4-blog) theme and going to try to look into how that works and go back to working on my own theme.
 
-That is all for this update, the is to be continued in [Part 2]({{ relref "post/Building-This-Site-pt2.md }}).
+That is all for this update, the is to be continued in [Part 2]({{< relref "post/Building-This-Site-pt2.md" >}}).

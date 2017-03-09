@@ -1,0 +1,24 @@
+{{ partial "head" . }}
+
+{{ partial "header" . }}
+
+    <section id="main-content">
+      <h3 id="page-title">{{ .Title }}</h3>
+      <p>Listing all currently active {{ .Title }}</p>
+      <div id="article-list">
+	{{ range .Data.Pages }}
+	  <div class="post-summary">
+	    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+	    <p>{{ .Date.Format "Jan 2, 2006" }}<p>
+	    <p>{{ .Summary }} <span class="read-more"><a href="{{ .RelPermalink }}">... Read More ...</a></span></p>
+	  </div>
+	{{ end }}
+      </div>
+    </section>
+      
+
+{{ partial "sidebar" . }}
+
+{{ partial "footer" . }}
+
+{{ partial "foot" . }}

@@ -1,0 +1,30 @@
+{{ partial "head" . }}
+
+{{ partial "header" . }}
+
+    <section id="main-content">
+      <h3 id="article-title">{{ .Title }}</h3>
+      <div id="content">
+	{{ .Content }}
+      </div>
+      <div id="meta-data">
+	<h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }}</h4>
+      </div>
+    </section>
+
+    <section id="category-navigation">
+	{{ if .PrevInSection }}
+          <a class="previous" href="{{.PrevInSection.Permalink}}">{{.PrevInSection.Title}}</a>
+        {{ end }}
+
+        {{ if .NextInSection }}
+	  <a class="next" href="{{.NextInSection.Permalink}}"> {{.NextInSection.Title}}</a>
+        {{ end }}
+    </section>
+      
+
+{{ partial "sidebar" . }}
+
+{{ partial "footer" . }}
+
+{{ partial "foot" . }}

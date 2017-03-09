@@ -8,6 +8,7 @@
 	{{ if eq .Type "post"}}
 	  <div class="post-summary">
 	    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+	    <p>{{ .Date.Format "Jan 2, 2006" }}<p>
 	    <p>{{ .Summary }} <span class="read-more"><a href="{{ .RelPermalink }}">... Read More ...</a></span></p>
 	  </div>
 	{{ end }}
