@@ -2,7 +2,18 @@
 
 {{ partial "header" . }}
 
-{{ partial "article-list" . }}
+    <section id="main-content">
+      <h3>Recent Posts</h3>
+      {{ range first 10 .Data.Pages }}
+	{{ if eq .Type "post"}}
+	  <div class="post-summary">
+	    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+	    <p>{{ .Summary }} <span class="read-more"><a href="{{ .RelPermalink }}">... Read More ...</a></span></p>
+	  </div>
+	{{ end }}
+      {{ end }}
+    </section>
+      
 
 {{ partial "sidebar" . }}
 
