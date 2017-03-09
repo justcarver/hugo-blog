@@ -1,8 +1,10 @@
-+++
-date = "2017-01-31T15:54:09-05:00"
-title = "Who is this Justin Carver anyway?"
-
-+++
+---
+title: "Who is this Justin Carver anyway?"
+menu:
+  main:
+    name: "About"
+    weight: 10
+---
 
 Me.  I am Justin Carver.  Does that not answer your question well enough?  Ok then.  Let me try to explain a bit better.
 

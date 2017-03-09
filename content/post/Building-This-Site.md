@@ -1,8 +1,11 @@
-+++
-date = "2017-01-31T15:50:47-05:00"
-title = "Building This Site"
+---
+date: "2017-01-31T15:50:47-05:00"
+title: "Building This Site"
+menu:
+  main:
+    parent: 'posts'
 
-+++
+---
 
 So, below I will make notes about the process I used to create this website.
 
