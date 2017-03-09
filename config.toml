@@ -1,0 +1,11 @@
+title = "JustCarver.com"
+baseurl = "http://www.justcarver.com"
+languageCode = "en-us"
+
+editor = "vim"
+theme = "justcarver"
+
+[params]
+  description = "Justin Carver's personal journey through the world of software development"
+  author = "Justin Carver"
+  subtitle = "Justin Carver's personal site/blog"
