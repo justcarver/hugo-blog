@@ -3,12 +3,12 @@ baseurl = "http://www.justcarver.com"
 languageCode = "en-us"
 
 editor = "vim"
-theme = "justcarver"
 
 [params]
   description = "Justin Carver's personal journey through the world of software development"
   author = "Justin Carver"
   subtitle = "Justin Carver's personal site/blog"
+
 [menu]
   [[menu.main]]
     name = "Home"
@@ -20,3 +20,24 @@ theme = "justcarver"
     identifier = "posts"
     url = "/post/"
     weight = 2
+
+  [[menu.social]]
+    name="GitHub"
+    identifier = "github"
+    url = "https://github.com/justcarver"
+    weight = 1
+  [[menu.social]]
+    name="Twitter"
+    identifier = "twitter"
+    url = "https://twitter.com/itsjustcarver"
+    weight = 2
+  [[menu.social]]
+    name="Instagram"
+    identifier = "instagram"
+    url = "https://www.instagram.com/itsjustcarver/"
+    weight = 3
+  [[menu.social]]
+    name="LinkedIn"
+    identifier = "linkedin"
+    url = "https://www.linkedin.com/in/justincarver/"
+    weight = 4
