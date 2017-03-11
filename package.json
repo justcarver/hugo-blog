@@ -1,0 +1,18 @@
+{
+  "description": "This is an attempt to redo my website as a Static Site using [Hugo](http://gohugo.io).",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justcarver/hugo-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justcarver/hugo-blog/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
