@@ -1,0 +1,29 @@
+{{ partial "page-start" . }}
+
+{{ partial "header" . }}
+
+<section class="main-content">
+  <h3 class="article-title">{{ .Title }}</h3>
+  <div class="article-content">
+    {{ .Content }}
+  </div>
+  <div class="article-meta-data">
+    <h4 class="article-date"> {{ .Date.Format "Mon Jan 2, 2006" }}</h4>
+  </div>
+</section>
+
+<section class="category-navigation">
+    {{ if .PrevInSection }}
+      <a class="previous-post-link" href="{{.PrevInSection.Permalink}}" title="{{.PrevInSection.Title}}">Prev : {{.PrevInSection.Title}}</a>
+    {{ end }}
+    {{ if .NextInSection }}
+      <a class="next-post-link" href="{{.NextInSection.Permalink}}" title="{{.NextInSection.Title}}">{{.NextInSection.Title}} : Next}</a>
+    {{ end }}
+</section>
+  
+
+{{ partial "sidebar" . }}
+
+{{ partial "footer" . }}
+
+{{ partial "page-end" . }}

@@ -1,0 +1,15 @@
+<section class="sidebar">
+  <h4 class="sidebar-title">About Me</h4>
+  <p class="sidebar-text">
+    Hello, I'm Justin Carver.  I'm a Software Developer working in Louisville, KY. 
+    Stick around a bit and ready my posts, or check out more about me 
+    <a href="{{ .RelRef "about.md" }}" title="About Me">here</a> and at my social media.
+  </p>
+
+  <h4 class="sidebar-title">Social</h4>
+  <ul class="sidebar-social">
+    {{ range .Site.Menus.social }}
+      <li class="social-link"><a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</section>

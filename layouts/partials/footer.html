@@ -1,0 +1,9 @@
+<footer>
+  <p>Unless otherwise started, &copy;{{ now.Year  }} {{ .Site.Params.Author }}</p>
+  <p>Any other copywritten material is used here for fun and should qualify as fair use</p>
+  <ul class="footer-social">
+    {{ range .Site.Menus.social }}
+      <li class="social-link"><a href="{{ .URL }}" title="{{ .Name }}">*</a></li>
+    {{ end }}
+  </ul>
+</footer>

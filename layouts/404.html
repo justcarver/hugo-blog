@@ -1,0 +1,17 @@
+{{ partial "page-start" . }}
+
+{{ partial "header" . }}
+
+<section class="main-content">
+  <h3 class="section-header">Page Not Found</h3>
+  <p>
+    The requested file or resource was not found.
+    Please go back or go to <a href="{{ .Site.BaseURL | absLangURL }}">Home</a> to try again.
+  </p>
+</section>
+
+{{ partial "sidebar" . }}
+
+{{ partial "footer" . }}
+
+{{ partial "page-end" . }}

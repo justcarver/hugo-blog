@@ -1,0 +1,11 @@
+<header>
+  <h1 class="page-title">Welcome to {{ .Site.Title }}</h1>
+  <h2 class="page-subtitle">{{ .Site.Params.SubTitle }}</h2>
+
+  <nav class="main-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <a class="main-nav-link {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</header>
