@@ -37,6 +37,13 @@ gulp.task('scripts', ['lint'], () => {
     .pipe(gulp.dest('static/js'));
 });
 
+// Hash images
+gulp.task('images', () => {
+    del(['static/img/**/*']);
+    gulp.src('src/img/**/*')
+        .pipe(gulp.dest('static/img'));
+});
+
 gulp.task('sass', () => {
   del(["static/css/**/*"])
   gulp.src('src/scss/**/*.scss')
@@ -52,6 +59,7 @@ gulp.task('sass', () => {
 gulp.task('watch', () => {
   gulp.watch('src/scss/**/*', ['sass']);
   gulp.watch('src/js/**/*', ['scripts']);
+  gulp.watch('src/img/**/*', ['images']);
 });
 
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('default', ['images', 'scripts', 'sass', 'watch']);
