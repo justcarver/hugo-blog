@@ -1,0 +1,28 @@
+header {
+  background-image: url(/img/awesome_louisville.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $greenblack;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFFFFF;
+  height: 200px;
+}
+
+.main-logo {
+  max-width: 150px;
+  float: left;
+
+  path {
+    fill: $lightblue;
+  }
+}
+
+.page-title {
+  margin-top: 0;
+}
+
+.page-subtitle {
+}
