@@ -6,9 +6,9 @@ menu:
     weight: 10
 ---
 
-Me.  I am Justin Carver.  Does that not answer your question well enough?  Ok then.  Let me try to explain a bit better.
+Me.  I am Justin Carver.  Does that not answer your question well enough?  OK then.  Let me try to explain a bit better.
 
-I am a software developer currently located in Louisville, KY.  I am currently employeed at UPS as a Web Developer Specialist.
+I am a software developer currently located in Louisville, KY.  I am currently employed at UPS as a Web Developer Specialist.
 
 I am also currently serving as a Mentor for [Code Louisville].  This is a job training program that offers a series of 12-week tracks to adults looking for careers in the software development industry.  These programs are offered at no cost to the student.  I have mentored the Full Stack Javascript and the Front-End Web Development tracks from [Code Louisville].
 
