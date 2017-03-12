@@ -1,0 +1,10 @@
+//Basic Typography styles
+
+body {
+  color: $registrationblack;
+  font: normal $text-font-stack;
+}
+
+pre, code {
+  color: $white;
+}
