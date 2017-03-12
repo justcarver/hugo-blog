@@ -2,6 +2,7 @@ title = "JustCarver.com"
 baseurl = "http://www.justcarver.com"
 languageCode = "en-us"
 
+PygmentsCodeFences = true
 editor = "vim"
 
 [params]
