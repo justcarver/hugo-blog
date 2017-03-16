@@ -2,23 +2,25 @@
 
 {{ partial "header" . }}
 
-<section class="main-content">
-  <h3 class="section-title">{{ .Title }}</h3>
-  <p class="section-subheading">Listing all currently active {{ .Title }}</p>
-  <div id="article-list">
-    {{ range .Data.Pages }}
-      <div class="post-summary">
-	<h2 class="post-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
-	<span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-	<p class="post-summary">{{ .Summary }}</p>
-	<span class="read-more"><a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a></span>
-      </div>
-    {{ end }}
-  </div>
-</section>
+    <div class="main-containter">
+      <section class="main-content">
+	<h3 class="section-title">{{ .Title }}</h3>
+	<p class="section-subheading">Listing all currently active {{ .Title }}</p>
+	<div id="article-list">
+	  {{ range .Data.Pages }}
+	    <div class="post-summary">
+	      <h2 class="post-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+	      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+	      <p class="post-summary">{{ .Summary }}</p>
+	      <span class="read-more"><a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a></span>
+	    </div>
+	  {{ end }}
+	</div>
+      </section>
       
 
-{{ partial "sidebar" . }}
+      {{ partial "sidebar" . }}
+    </div>
 
 {{ partial "footer" . }}
 

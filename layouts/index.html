@@ -2,24 +2,26 @@
 
 {{ partial "header" . }}
 
-    <section class="main-content">
-      <h3 class="section-header">Recent Posts</h3>
-      {{ range first 5 .Data.Pages }}
-	{{ if ne .Type "page"}}
-	  <div class="post-summary">
-	    <h2 class="post-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
-	    <span class="post-type">{{ .Type }}</span>
-	    <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-	    <p class="post-summary">{{ .Summary }}</p>
-	    <span class="read-more"><a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a>
-	  </div>
+    <div class="main-containter">
+      <section class="main-content">
+	<h3 class="section-header">Recent Posts</h3>
+	{{ range first 5 .Data.Pages }}
+	  {{ if ne .Type "page"}}
+	    <div class="post-summary">
+	      <h2 class="post-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+	      <span class="post-type">{{ .Type }}</span>
+	      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+	      <p class="post-summary">{{ .Summary }}</p>
+	      <span class="read-more"><a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a>
+	    </div>
+	  {{ end }}
 	{{ end }}
-      {{ end }}
-      <a class="view-all" href="post/" title="View All Posts">View All Posts</a>
-    </section>
-      
+	<a class="view-all" href="post/" title="View All Posts">View All Posts</a>
+      </section>
 
-{{ partial "sidebar" . }}
+      {{ partial "sidebar" . }}
+
+    </div>
 
 {{ partial "footer" . }}
 

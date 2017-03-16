@@ -2,27 +2,77 @@ header {
   background-image: url(/img/awesome_louisville.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $greenblack;
+  background-color: #000000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #FFFFFF;
-  height: 200px;
-}
-
-.main-logo {
-  max-width: 150px;
-  float: left;
-
-  path {
-    fill: $lightblue;
-  }
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-title {
-  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.page-subtitle {
+
+.main-logo {
+  width: 100px;
+
+  path {
+    fill: #FFFFFF;
+  }
 }
+
+.page-title-text {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.page-title-text .title {
+  margin: 6px;
+  font-size: 1.5rem;
+  font-family: $code-font-stack;
+}
+
+.page-title-text .subtitle {
+  margin: 6px;
+  font-size: 1.25rem;
+}
+
+.main-nav {
+  display: flex;
+  justify-content:space-around;
+  align-items: bottom;
+  background-color: #000000;
+  font-size: 1.2rem;
+
+  a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-top: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    &:hover {
+      background-color: #333333;
+    }
+    
+    &.active {
+      background-color: #FFFFFF;
+      color: #000000;
+
+      &:hover {
+	background-color: #BBBBBB;
+      }
+    }
+  }
+
+}
+

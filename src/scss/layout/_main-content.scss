@@ -1,0 +1,22 @@
+.main-containter {
+  padding: 12px;
+  max-width: 1000px;
+  margin: auto;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media all and (min-width: 800px) {
+  section.main-content {
+    float: left;
+    width: 75%;
+  }
+  section.sidebar {
+    float: right;
+    width: 20%;
+  }
+}
