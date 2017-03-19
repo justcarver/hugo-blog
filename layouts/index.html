@@ -7,12 +7,11 @@
 	<h3 class="section-header">Recent Posts</h3>
 	{{ range first 5 .Data.Pages }}
 	  {{ if ne .Type "page"}}
-	    <div class="post-summary">
-	      <h2 class="post-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
-	      <span class="post-type">{{ .Type }}</span>
-	      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-	      <p class="post-summary">{{ .Summary }}</p>
-	      <span class="read-more"><a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a>
+	    <div class="article article-{{ .Type }}">
+	      <h2 class="article-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+	      <span class="article-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+	      <p class="article-summary">{{ .Summary }}</p>
+	      <span class="article-more"><a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a>
 	    </div>
 	  {{ end }}
 	{{ end }}
