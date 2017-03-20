@@ -21,6 +21,11 @@ editor = "vim"
     identifier = "posts"
     url = "/post/"
     weight = 2
+  [[menu.main]]
+    name = "Projects"
+    identifier = "projects"
+    url = "/project/"
+    weight = 3
 
   [[menu.social]]
     name="GitHub"
