@@ -1,12 +1,14 @@
 
 //Colors
+$white: #FFFFFF;
+$black: #000000;
 
-$greenblack: #0D1B1E;
-$blue: #235789;
-$orange: #BB4430;
-$lightblue: #41EAD4;
-$black: #020100;
+$lightest: #00A8E8;
+$light: #007EA7;
+$dark: #003459;
+$darkest: #00171F;
+
 
 // Font related
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 $code-font-stack: 'Hack', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;

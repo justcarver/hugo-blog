@@ -1,13 +1,33 @@
 .main-containter {
   padding: 12px;
-  max-width: 1000px;
+  max-width: 1050px;
   margin: auto;
+  background-color: $white;
+  padding: 0px 50px 50px;
+
+  a {
+    color: $light;
+
+    &:hover {
+      color: $lightest;
+    }
+
+    &:visited {
+      color: $dark;
+    }
+  }
 
   &:after {
     content: "";
     display: table;
     clear: both;
   }
+}
+
+.section-header {
+  margin: 0px auto;
+  padding: 2rem 0rem;
+  text-align: center;
 }
 
 .article {
@@ -28,7 +48,7 @@
     position: absolute;
     top: 50%;
     right: 12px;
-    z-index: -50;
+    z-index: -0;
     color: rgba(0,0,0,0.2);
     font-size: 100px;
     transform: translateY(-50%);
@@ -36,11 +56,21 @@
 
   .article-title {
     display: inline-block;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .article-date {
     display: inline-block;
     float: right;
+  }
+
+  .article-more {
+    text-align: center;
+    margin: auto;
   }
 }
 

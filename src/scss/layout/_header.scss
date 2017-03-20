@@ -2,12 +2,12 @@ header {
   background-image: url(/img/awesome_louisville.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: $darkest;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #FFFFFF;
+  color: $white;
   height: 150px;
   position: relative;
   display: flex;
@@ -26,7 +26,7 @@ header {
   width: 100px;
 
   path {
-    fill: #FFFFFF;
+    fill: $white;
   }
 }
 
@@ -41,35 +41,29 @@ header {
   font-family: $code-font-stack;
 }
 
-.page-title-text .subtitle {
-  margin: 6px;
-  font-size: 1.25rem;
-}
-
 .main-nav {
   display: flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items: bottom;
-  background-color: #000000;
+  background-color: $darkest;
   font-size: 1.2rem;
 
   a {
-    color: #FFFFFF;
+    color: $white;
     text-decoration: none;
-    padding-top: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
 
     &:hover {
-      background-color: #333333;
+      background-color: $lightest;
     }
     
     &.active {
-      background-color: #FFFFFF;
-      color: #000000;
+      background-color: $light;
 
       &:hover {
-	background-color: #BBBBBB;
+	background-color: $lightest;
       }
     }
   }

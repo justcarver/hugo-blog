@@ -1,6 +1,6 @@
 footer {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: $darkest;
+  color: $white;
   font-size: .8rem;
   padding: 12px;
 
@@ -17,10 +17,10 @@ footer {
   a {
     text-decoration: none;
     font-size: 3rem;
-    color: #FFFFFF;
+    color: $light;
 
     &:hover {
-      color: #DDDDDD;
+      color: $lightest;
     }
   }
 }

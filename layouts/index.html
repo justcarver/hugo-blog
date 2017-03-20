@@ -9,9 +9,11 @@
 	  {{ if ne .Type "page"}}
 	    <div class="article article-{{ .Type }}">
 	      <h2 class="article-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
-	      <span class="article-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+	      <div class="article-date">{{ .Date.Format "Jan 2, 2006" }}</div>
 	      <p class="article-summary">{{ .Summary }}</p>
-	      <span class="article-more"><a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a>
+	      <div class="article-more">
+		<a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a>
+	      </div>
 	    </div>
 	  {{ end }}
 	{{ end }}
