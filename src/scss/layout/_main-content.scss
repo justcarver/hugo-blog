@@ -27,11 +27,20 @@
     font-family: "FontAwesome";
     position: absolute;
     top: 50%;
-    left: 12px;
+    right: 12px;
     z-index: -50;
-    color: rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.2);
     font-size: 100px;
     transform: translateY(-50%);
+  }
+
+  .article-title {
+    display: inline-block;
+  }
+
+  .article-date {
+    display: inline-block;
+    float: right;
   }
 }
 
@@ -39,8 +48,13 @@
   content: "\f10e";
 }
 
-.article-project::before {
+.article-project::after {
   content: "\f121";
+}
+
+nav.view-all {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media all and (min-width: 800px) {
