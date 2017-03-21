@@ -21,21 +21,18 @@ I also previously completed the Front-End Web Development and the Back End Web D
 <h4>Treehouse Statistics</h4>
 
 <div class="treehouse-statistics">
-  <label>Search for username: <input type="text" value="justincarver" /></label>
-  <button class="search-treehouse">Search</button>
-  <h4><span class="username">justcarver</span>'s Statistics</h4>
-  <h5><span class="total">0</span> points earned</h5>
-  <div class="pieChart">
-    <div class="pie"></div>
-    <div class="legend"></div>
+  <label>Search for username: <input id="treehouse-username-search" type="text" value="justincarver" /></label>
+  <button id="search-treehouse">Search</button>
+  <h4><span id="treehouse-username">justcarver</span>'s Statistics</h4>
+  <h5><span id="treehouse-total">0</span> points earned</h5>
+  <div id="pieChart" class="pieChart">
+    <div id="pie"></div>
+    <div id="legend"></div>
   </div>
-  <div class="badge-display">
+  <div id="badge-display">
 
   </div>
-  <div class="loader">
+  <div id="loader">
     Loading...
-    <div class="loader-center">
-	Loading...
-    </div>
   </div>
 </div>

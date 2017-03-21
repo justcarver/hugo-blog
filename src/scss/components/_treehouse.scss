@@ -1,0 +1,188 @@
+/* Styles for the Treehouse pie */
+$size-pie: 7rem;
+$size-width: 2rem;
+$size-inner: $size-pie - $size-width * 2;
+
+.pieChart {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.pie {
+  height: $size-pie;
+  width: $size-pie;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: $size-inner;
+    height: $size-inner;
+    background: $white;
+    border-radius: 50%;
+    top: $size-width;
+    left: $size-width;
+    z-index: 1;
+  }
+}
+
+.slice {
+  position: absolute;
+  width: $size-pie;
+  height: $size-pie;
+  clip: rect(0px, $size-pie, $size-pie, $size-pie/2);
+
+  span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: $size-pie;
+    height: $size-pie;
+    border-radius: 50%;
+    clip: rect(0px, $size-pie, $size-pie, $size-pie/2);
+  }
+}
+
+#chartLegend {
+  list-style: none;
+  padding: 0;
+  margin-left: 2rem;
+
+  li {
+    border-left: 1em solid black;
+    padding: 0 .5em;
+    margin: .25em 0;
+    max-width: 250px;
+
+    span {
+      margin-left: 1em;
+      float: right;
+      font-weight: bold;
+    }
+  }
+}
+
+.badge-display {
+  max-width: 500px;
+  margin: auto;
+}
+
+.badge {
+  position: relative;
+  width: 18%;
+  height: 21%;
+  max-width: 90px;
+  max-height: 98.1px;
+  display: inline-block;
+  padding: 3px;
+
+  .badge-info {
+    position: absolute;
+    top: 100px;
+    left: -55px;
+    width: 200px;
+    opacity: 0;
+    background: white;
+    border: 1px solid $light;
+
+    span {
+      display: block;
+      text-align: center;
+    }
+
+    .badge-name {
+      font-weight:bold;
+    }
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all .2 ease-in-out;
+
+    &:hover {
+      transform: scale(1.5);
+      z-index: 2;
+    }
+
+    &:hover + div {
+      opacity: 1;
+      z-index: 5;
+    }
+  }
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: '';
+}
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background: $white;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.2em 5.1em;
+  transform-origin: 5.2em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+}
+.loader {
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 0 auto;
+  position: relative;
+  top: -175px;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em $light;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 10;
+}
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: $white;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 5.1em;
+  -webkit-transform-origin: 0px 5.1em;
+  transform-origin: 0px 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+}
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
