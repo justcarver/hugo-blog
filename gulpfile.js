@@ -14,29 +14,25 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 
-gulp.task('lint', () => {
-  return gulp.src('src/js/**/*.js')
-    .pipe(plumber())
-    .pipe(eslint())
-    .pipe(eslint.format({
-      globals: [
-	'jQuery',
-	'$'
-      ],
-      envs: [
-	'browser',
-	'es6'
-      ]
-    }))
-    .pipe(eslint.failAfterError());
-});
-
-gulp.task('scripts', ['lint'], () => {
+gulp.task('scripts', () => {
   del(["static/js/**/*"])
   gulp.src('src/js/**/*.js')
     .pipe(plumber())
+    .pipe(sourcemaps.init())
+    .pipe(babel({
+      "presets": [
+	["env", {
+	  "targets": {
+	    "browsers": ["last 2 versions", "safari >= 7"]
+	  }
+	}]
+      ]
+    }))
+    .pipe(eslint())
+    .pipe(eslint.failAfterError())
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('static/js'));
 });
 
