@@ -72,4 +72,5 @@ gulp.task('watch', () => {
   gulp.watch('src/fonts/**/*', ['fonts']);
 });
 
+gulp.task('build', ['images', 'fonts', 'scripts', 'sass']);
 gulp.task('default', ['images', 'fonts', 'scripts', 'sass', 'watch']);
