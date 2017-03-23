@@ -18,6 +18,8 @@ const treehouseColors = {
   'C#' : '#9E4D83',
   'Databases' : '#EB7728'
 };
+const searchBox = document.getElementById('treehouse-username-search');
+const searchButton = document.getElementById('search-treehouse');
 
 // Global Variables
 var httpRequest;
@@ -44,7 +46,7 @@ function processTreehouseRequest() {
   }
 }
 
-function buildTreehouseGraph ( treehouse ) {
+function buildTreehouseGraph (treehouse) {
   //Parse the JSON into different Variables
   let offset = 0 - 1;
   let name = treehouse.name;
@@ -143,5 +145,15 @@ function buildTreehouseGraph ( treehouse ) {
   document.getElementById('loader').style.display = "none";
 }
 
-treehouseAJAX('justincarver');
+function searchTreehouse (event) {
+  if (event.type == 'click' || event.keyCode == 13) {
+    const username = searchBox.value;
+    treehouseAJAX(username);
+  }
+}
 
+if (searchButton) {
+  searchButton.addEventListener('click', searchTreehouse);
+  searchBox.addEventListener('keyup', searchTreehouse);
+  treehouseAJAX('justincarver');
+}

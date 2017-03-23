@@ -17,22 +17,3 @@ I also previously completed the Front-End Web Development and the Back End Web D
 
 [Code Louisville]: http://www.codelouisville.org "Code Louisville"
 [Treehouse]: http://www.teamtreehouse.com "Treehouse Learning Platform"
-
-<h4>Treehouse Statistics</h4>
-
-<div class="treehouse-statistics">
-  <label>Search for username: <input id="treehouse-username-search" type="text" value="justincarver" /></label>
-  <button id="search-treehouse">Search</button>
-  <h4><span id="treehouse-username">justcarver</span>'s Statistics</h4>
-  <h5><span id="treehouse-total">0</span> points earned</h5>
-  <div id="pieChart" class="pieChart">
-    <div id="pie"></div>
-    <div id="legend"></div>
-  </div>
-  <div id="badge-display">
-
-  </div>
-  <div id="loader">
-    Loading...
-  </div>
-</div>
