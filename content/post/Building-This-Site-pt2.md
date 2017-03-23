@@ -17,7 +17,7 @@ I got my main Index template functioning, and will include a picture below.  The
 
 That is all for now, so hopefully I will have more progress soon.
 
-![Finished HTML Structure of Site](/img/htmlfinished.png)
+{{< figure src="/img/htmlfinished.png" title="Finished HTML Layout" alt="Picture of early version of JustCarver.com" caption="A very early version of the site, before any styling was applied.">}}
 
 [Hugo]: http://gohugo.io "Hugo Static Site Generator"
 [Part One]: {{< relref "post/Building-This-Site-pt1.md" >}} "Building This Site Part 1"

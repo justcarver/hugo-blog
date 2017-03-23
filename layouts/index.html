@@ -4,7 +4,7 @@
 
     <div class="main-containter">
       <section class="main-content">
-	<h3 class="section-header">Recent Posts</h3>
+	<h3 class="section-header">Recent Articles</h3>
 	{{ range first 5 .Data.Pages }}
 	  {{ if ne .Type "page"}}
 	    <div class="article article-{{ .Type }}">

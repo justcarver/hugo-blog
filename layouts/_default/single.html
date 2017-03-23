@@ -5,26 +5,32 @@
     <div class="main-containter">
       <section class="main-content">
 	<h3 class="section-header">{{ .Title }}</h3>
-	<div class="article-content">
-	  {{ .Content }}
-	</div>
+
 	{{ if ne .Type "page" }}
 	<div class="article-meta-data">
 	  <h4 class="article-date"> {{ .Date.Format "Mon Jan 2, 2006" }}</h4>
 	</div>
 	{{ end }}
 
+	<div class="article-content">
+	  {{ .Content }}
+	</div>
+
 	<div class="category-navigation">
 	    {{ if .PrevInSection }}
-	      <a class="previous-post-link" href="{{.PrevInSection.Permalink}}" title="{{.PrevInSection.Title}}">Prev : {{.PrevInSection.Title}}</a>
+	      <a class="previous-post-link" href="{{.PrevInSection.Permalink}}" title="{{.PrevInSection.Title}}"><i class="fa fa-arrow-circle-left"></i> {{.PrevInSection.Title}}</a>
 	    {{ end }}
 	    {{ if .NextInSection }}
-	      <a class="next-post-link" href="{{.NextInSection.Permalink}}" title="{{.NextInSection.Title}}">{{.NextInSection.Title}} : Next}</a>
+	      <a class="next-post-link" href="{{.NextInSection.Permalink}}" title="{{.NextInSection.Title}}">{{.NextInSection.Title}} <i class="fa fa-arrow-circle-right"></i></a>
 	    {{ end }}
 	</div>
       </section>
 
-      {{ partial "sidebar" . }}
+      {{ if ne .Path "about.md" }}
+	{{ partial "sidebar" . }}
+      {{ else }}
+	{{ partial "about-sidebar" . }}
+      {{ end }}
 
     </div>
 

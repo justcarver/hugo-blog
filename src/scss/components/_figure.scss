@@ -1,0 +1,24 @@
+figure {
+  border-radius: 5px;
+  padding: 12px;
+  margin: 12px auto;
+  background-color: $lightest;
+  
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  figcaption {
+    margin-top: 12px;
+    padding: 12px;
+    background-color: $white;
+
+    h4 {
+      margin: 0;
+    }
+
+  }
+}
