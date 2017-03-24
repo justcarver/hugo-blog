@@ -1,5 +1,5 @@
 title = "JustCarver.com"
-baseurl = "104.131.71.185"
+baseurl = "justcarver.com"
 languageCode = "en-us"
 
 PygmentsCodeFences = true
