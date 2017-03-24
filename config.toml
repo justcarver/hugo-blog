@@ -5,6 +5,9 @@ languageCode = "en-us"
 PygmentsCodeFences = true
 editor = "vim"
 
+[taxonomies]
+language = "languages"
+
 [params]
   description = "Justin Carver's personal journey through the world of software development"
   author = "Justin Carver"
