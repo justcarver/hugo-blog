@@ -9,15 +9,15 @@
     <link rel="canonical" href="{{ .Permalink }}" />
     {{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css" />
+    <link rel="stylesheet" href={{ "/css/main.css" | relURL }} />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="{{ .Site.BaseURL }}/img/favicons/manifest.json">
-    <link rel="mask-icon" href="{{ .Site.BaseURL }}/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="{{ .Site.BaseURL }}/img/favicons/favicon.ico">
-    <meta name="msapplication-config" content="{{ .Site.BaseURL }}/img/favicons/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href={{ "/img/favicons/apple-touch-icon.png" | relURL }} >
+    <link rel="icon" type="image/png" href={{ "/img/favicons/favicon-32x32.png" | relURL }}  sizes="32x32">
+    <link rel="icon" type="image/png" href={{ "/img/favicons/favicon-16x16.png" | relURL }}  sizes="16x16">
+    <link rel="manifest" href={{ "/img/favicons/manifest.json" | relURL }} >
+    <link rel="mask-icon" href={{ "/img/favicons/safari-pinned-tab.svg" | relURL }}  color="#5bbad5">
+    <link rel="shortcut icon" href={{ "/img/favicons/favicon.ico" | relURL }} >
+    <meta name="msapplication-config" content={{ "/img/favicons/browserconfig.xml" | relURL }} >
     <meta name="theme-color" content="#5289f5">
 
   </head>

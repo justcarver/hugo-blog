@@ -1,6 +1,7 @@
 title = "JustCarver.com"
-baseurl = "justcarver.com"
+baseurl = "https://justcarver.com"
 languageCode = "en-us"
+relativeurls = true
 
 PygmentsCodeFences = true
 editor = "vim"
