@@ -3,6 +3,8 @@
   "scripts": {
     "push:github": "git push origin master",
     "push:prod": "git push prod master",
+    "build": "gulp build",
+    "hugo": "hugo",
     "deploy": "npm run push:prod",
     "predeploy": "npm run push:github"
   },
