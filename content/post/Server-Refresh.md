@@ -7,4 +7,5 @@ menu:
     parent: 'posts'
 ---
 
+This is my test file.
 
