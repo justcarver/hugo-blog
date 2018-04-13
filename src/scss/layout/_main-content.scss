@@ -74,14 +74,6 @@
   }
 }
 
-.article-post::after {
-  content: "\f10e";
-}
-
-.article-project::after {
-  content: "\f121";
-}
-
 nav.view-all {
   display: flex;
   justify-content: space-around;
