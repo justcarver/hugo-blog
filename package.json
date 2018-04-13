@@ -1,10 +1,10 @@
 {
   "description": "This is an attempt to redo my website as a Static Site using [Hugo](http://gohugo.io).",
   "scripts": {
-    "push:github" : "git push origin master",
-    "push:prod" : "git push prod master",
-    "deploy" : "npm run push:prod",
-    "predeploy" : "npm run push:github"
+    "push:github": "git push origin master",
+    "push:prod": "git push prod master",
+    "deploy": "npm run push:prod",
+    "predeploy": "npm run push:github"
   },
   "repository": {
     "type": "git",
