@@ -8,5 +8,4 @@ menu:
 ---
 
 This is my test file.
-Testing 2.
 
