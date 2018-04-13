@@ -35,29 +35,29 @@ language = "languages"
     name="GitHub"
     identifier = "github"
     url = "https://github.com/justcarver"
-    pre = "<i class='fa fa-github'></i>"
+    pre = "<i class="fab fa-github"></i>"
     weight = 1
   [[menu.social]]
     name="Twitter"
     identifier = "twitter"
     url = "https://twitter.com/itsjustcarver"
-    pre = "<i class='fa fa-twitter'></i>"
+    pre = "<i class="fab fa-twitter"></i>"
     weight = 2
   [[menu.social]]
     name="Instagram"
     identifier = "instagram"
     url = "https://www.instagram.com/itsjustcarver/"
-    pre = "<i class='fa fa-instagram'></i>"
+    pre = "<i class="fab fa-instagram"></i>"
     weight = 3
   [[menu.social]]
     name="LinkedIn"
     identifier = "linkedin"
     url = "https://www.linkedin.com/in/justincarver/"
-    pre = "<i class='fa fa-linkedin-square'></i>"
+    pre = "<i class="fab fa-linkedin"></i>"
     weight = 4
   [[menu.social]]
     name="Email"
     identifier = "email"
     url = "mailto:carver@justcarver.com"
-    pre = "<i class='fa fa-envelope'></i>"
+    pre = "<i class="fas fa-envelope"></i>"
     weight = 5
