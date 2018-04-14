@@ -42,18 +42,6 @@
   margin-bottom: 12px;
   position:relative;
 
-  &::after {
-    content: "";
-    font-family: "FontAwesome";
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    z-index: -0;
-    color: rgba(0,0,0,0.1);
-    font-size: 100px;
-    transform: translateY(-50%);
-  }
-
   .article-title {
     display: inline-block;
     margin: 0;
@@ -72,6 +60,17 @@
     text-align: center;
     margin: auto;
   }
+  
+  .articler-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    z-index: -0;
+    color: rgba(0,0,0,0.1);
+    font-size: 100px;
+    transform: translateY(-50%);
+  }
+
 }
 
 nav.view-all {
