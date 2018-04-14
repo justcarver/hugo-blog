@@ -7,22 +7,20 @@
     <h3 class="section-header">Recent Articles</h3>
     {{ range first 5 .Data.Pages }}
       {{ if ne .Type "page"}}
-	<div class="article article-{{ .Type }}">
+	<div class="article">
 	  <h2 class="article-title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
 	  <div class="article-date">{{ .Date.Format "Jan 2, 2006" }}</div>
 	  <p class="article-summary">{{ .Summary }}</p>
 	  <div class="article-more">
 	    <a href="{{ .RelPermalink }}" title="Read More">... Read More ...</a>
 	  </div>
-	  {{ if eq .Type "project" }}
-	    <div class="article-icon">
+	  <div class="article-icon">
+	    {{ if eq .Type "project" }}
 	      <i class="far fa-code"></i>
-	    </div>
-	  {{ else if eq .Type "post" }}
-	    <div class="article-icon">
+	    {{ else if eq .Type "post" }}
 	      <i class="fas fa-quote-right"></i>
-	    </div>
-	  {{ end }}
+	    {{ end }}
+	  </div>
 	</div>
       {{ end }}
     {{ end }}
