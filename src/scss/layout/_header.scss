@@ -46,14 +46,12 @@ header {
   justify-content:center;
   align-items: bottom;
   background-color: $darkest;
-  font-size: 1.2rem;
+  font-size: 1rem;
 
   a {
     color: $white;
     text-decoration: none;
-    padding: 12px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 12px 12px;
 
     &:hover {
       background-color: $lightest;
@@ -70,3 +68,12 @@ header {
 
 }
 
+@media (min-width: 450px) {
+  .main-nav {
+    font-size: 1.2rem;
+
+    a {
+      padding: 12px 24px;
+    }
+  }
+}
